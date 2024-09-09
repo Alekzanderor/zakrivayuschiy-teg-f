@@ -1,1 +1,38 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+
+    --main-text-family: 'Inter';    
+    --main-text-title-weight: 700;
+    --main-text-paragraph-weight: 400;
+    --accent-text-family: 'Press Start 2P';    
+
+    --label-stroke-color:#ffffff;
+
+    --background-color: rgba(255, 255, 255, 1);
+    --accent-color: rgba(0, 0, 0, 1);
+    --accent-color-button: rgba(255, 255, 255, 1);
+    --accent-color-fade:rgba(0, 0, 0, 0.6);
+    
+    --background-gradient-ambient-color: #d3d3d3;
+    --background-gradient-accent-color-start: #e7e7e7;
+    --background-gradient-accent-color-end: #1a1a1a;
+    --background-gradient-accent-start: 0.01%;
+
+    --heart-color-contour:black;
+    --heart-color:rgba(255,0,0,0);
+    --heart-color-visible: rgba(255,0,0,1);
+
+
+    --background-image-gradients:
+    repeating-linear-gradient(to right, var(--background-gradient-ambient-color) 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, var(--background-gradient-ambient-color) 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, 
+    var(--background-gradient-accent-color-start) 0 var(--background-gradient-accent-start), 
+    var(--background-gradient-accent-color-end) );
+
+    --inline-size:48.5dvi;
+    --inline-size:clamp(375px,48.5dvi,696px);
+
+    
+    }
