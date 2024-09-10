@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
-    <link rel="icon" href="../images/favicon.ico" sizes="any" />
-    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="../images/favicon.png" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header block">
-      <h1 class="header-title">&lt;/html&gt;</h1>
-      <h2 class="header-title__extra">Закрывающий тег</h2>
+      <a class="header-title"> &lt;/html&gt; </a>
+      <h1 class="header-title__extra">Закрывающий тег</h1>
 
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -49,17 +49,21 @@
     </header>
 
     <main>
-      <section class="card">
-        <h3 class="text">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      <article class="card">
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
         <div class="card__img-wrapper">
           <img
-            class="image__beggining"
+            class="image__filter-brightness"
             src="images/image.png"
             alt="Фургон на загородной дороге, 
             нарисовано в стиле пиксель арт."
             loading="lazy"
           />
-          <span class="card__img-label">&lt;/html&gt;</span>
+          <span class="card__img-label card__img-label-uppercase"
+            >&lt;/html&gt;</span
+          >
         </div>
         <div class="card__text">
           <p>
@@ -70,8 +74,9 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="card__like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -116,23 +121,28 @@
               />
             </svg>
           </button>
-          <button class="card__like-button animated-button">
+          <button
+            type="button"
+            class="card__like-button button-style animated-button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
-        <h3 class="text">1 спринт: Я — чистый лист</h3>
+      <article class="card">
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__img-wrapper">
           <img
-            class="image__start"
+            class="image__filter-contrast"
             src="images/image.png"
             alt="Фургон на загородной дороге, 
             нарисовано в стиле пиксель арт."
             loading="lazy"
           />
-          <span class="card__img-label">&lt;/html&gt;</span>
+          <span class="card__img-label card__img-label-uppercase"
+            >&lt;/html&gt;</span
+          >
         </div>
         <div class="card__text">
           <p>
@@ -145,8 +155,9 @@
           <p>Место для ваших воспоминаний о начале первого спринта.</p>
         </div>
         <div class="card__like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -191,23 +202,28 @@
               />
             </svg>
           </button>
-          <button class="card__like-button animated-button">
+          <button
+            type="button"
+            class="card__like-button button-style animated-button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
-        <h3 class="text">1 спринт: А если не получится?</h3>
+      <article class="card">
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__img-wrapper">
           <img
-            class="image__first-project-done"
+            class="image__filter-blur"
             src="images/image.png"
             alt="Фургон на загородной дороге, 
             нарисовано в стиле пиксель арт."
             loading="lazy"
           />
-          <span class="card__img-label">&lt;css&gt;</span>
+          <span class="card__img-label card__img-label-uppercase"
+            >&lt;css&gt;</span
+          >
         </div>
         <div class="card__text">
           <p>
@@ -218,8 +234,9 @@
           <p>Место для ваших воспоминаний об окончании первого спринта.</p>
         </div>
         <div class="card__like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -264,17 +281,20 @@
               />
             </svg>
           </button>
-          <button class="card__like-button animated-button">
+          <button
+            type="button"
+            class="card__like-button button-style animated-button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
-        <h3 class="text">2 спринт: Погоня за идеалом</h3>
+      <article class="card">
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__img-wrapper">
           <img
-            class="image__chasing-perfection"
+            class="image__filter-grayscale"
             src="images/image.png"
             alt="Фургон на загородной дороге, 
             нарисовано в стиле пиксель арт."
@@ -293,8 +313,9 @@
           <p>Место для ваших воспоминаний о начале второго спринта.</p>
         </div>
         <div class="card__like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -339,17 +360,20 @@
               />
             </svg>
           </button>
-          <button class="card__like-button animated-button">
+          <button
+            type="button"
+            class="card__like-button button-style animated-button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
-        <h3 class="text">2 спринт: О тех, кто рядом</h3>
+      <article class="card">
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__img-wrapper">
           <img
-            class="image__group"
+            class="image__filter-saturate-and-invert"
             src="images/image.png"
             alt="Фургон на загородной дороге, 
             нарисовано в стиле пиксель арт."
@@ -369,8 +393,9 @@
           <p>Место для ваших воспоминаний об окончании второго спринта.</p>
         </div>
         <div class="card__like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -415,17 +440,20 @@
               />
             </svg>
           </button>
-          <button class="card__like-button animated-button">
+          <button
+            type="button"
+            class="card__like-button button-style animated-button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
-        <h3 class="text">3 спринт: Обходные стратегии</h3>
+      <article class="card">
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__img-wrapper">
           <img
-            class="image__different-approach"
+            class="image__filter-huer-rotate"
             src="images/image.png"
             alt="Фургон на загородной дороге, 
             нарисовано в стиле пиксель арт."
@@ -442,8 +470,9 @@
           <p>Место для ваших воспоминаний о начале третьего спринта.</p>
         </div>
         <div class="card__like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -488,14 +517,17 @@
               />
             </svg>
           </button>
-          <button class="card__like-button animated-button">
+          <button
+            type="button"
+            class="card__like-button button-style animated-button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
-        <h3 class="text">3 спринт: Когда опускаются руки</h3>
+      <article class="card">
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__img-wrapper">
           <img
             class="image__concentration"
@@ -517,8 +549,9 @@
           <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
         </div>
         <div class="card__like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -563,17 +596,20 @@
               />
             </svg>
           </button>
-          <button class="card__like-button animated-button">
+          <button
+            type="button"
+            class="card__like-button button-style animated-button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="card">
-        <h3 class="text">«Сейчас я здесь»</h3>
+      <article class="card">
+        <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__img-wrapper">
           <img
-            class="image__feeling"
+            class="image__filter-sepia"
             src="images/image.png"
             alt="Фургон на загородной дороге, 
             нарисовано в стиле пиксель арт."
@@ -594,10 +630,13 @@
             Место, чтобы остановиться, подумать и написать, что вы чувствуете в
             этой точке пути.
           </p>
-        </div>
+        </div><!-- width="39"
+        height="36"
+        viewBox="0 0 39 36"  -->
         <div class="card__like">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -642,31 +681,38 @@
               />
             </svg>
           </button>
-          <button class="card__like-button animated-button">
+          <button
+            type="button"
+            class="card__like-button button-style animated-button"
+          >
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
       <button
-        class="save-button animated-button"
+        type="button"
+        class="button-style save-button animated-button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
-        <svg width="20" height="20" viewBox="0 0 29 28">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 29 28">
           <use href="../images/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog open id="dialog-id" class="dialog-insert-floppy">
+      <dialog id="dialog-id" class="dialog-insert-floppy">
         <div class="dialog-wrapper">
-          <svg width="40" height="40" viewBox="0 0 29 28">
+          <svg aria-hidden="true" width="40" height="40" viewBox="0 0 29 28">
             <use href="../images/floppy.svg#floppy"></use>
           </svg>
-          <span class="dialog-text">Вставьте дискету, чтобы продолжить</span>
+          <p class="dialog-text button__text">
+            Вставьте дискету, чтобы продолжить
+          </p>
         </div>
         <button
-          class="save-button animated-button button-dialog"
+          type="button"
+          class="button-style save-button animated-button button-dialog"
           onclick="window['dialog-id'].close()"
         >
           <span class="button__text button__text-dialoge">Ok</span>

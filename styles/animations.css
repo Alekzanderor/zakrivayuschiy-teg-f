@@ -26,11 +26,8 @@
  0% {
     translate: 0px;
   }
-  50% {
-    translate: 4px;
-  }
   100% {
-    translate: 0px;
+    translate: 4px;
   }
 }
 

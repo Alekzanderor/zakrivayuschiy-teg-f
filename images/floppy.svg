@@ -1,5 +1,5 @@
 <svg width="29" height="28" viewBox="0 0 29 28"  fill="none" xmlns="http://www.w3.org/2000/svg"> <!--width="29" height="28" viewBox="0 0 29 28" -->
-<symbol id="floppy" >
+<symbol id="floppy" class="floppy-symbol">
 
 <rect x="0.5" width="2.15385" height="2.15385" fill="var(--accent-color-button)"/>
 <rect x="0.5" y="2.15405" width="2.15385" height="2.15385" fill="var(--accent-color-button)"/>
