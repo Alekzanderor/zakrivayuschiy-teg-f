@@ -34,17 +34,6 @@
   align-items: center;
 }
 
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--main-text-family), Helvetica, sans-serif;
-    font-variation-settings: "wght" var(--main-text-paragraph-weight);
-  }
-  .card__title {
-    font-family: var(--main-text-family), Helvetica, sans-serif;
-    font-variation-settings: "wght" var(--main-text-title-weight);
-  }
-}
-
 .header {
   inline-size: var(--inline-size);
   min-block-size: clamp(323px, 250px + 7.9vi, 364px);
@@ -67,7 +56,7 @@ button {
 
   font-size: 14px;
   line-height: 14px;
-  font-family: "Press Start 2P", Helvetica, sans-serif;
+  font-family: "Press Start 2P", fantasy, sans-serif;
   cursor: pointer;
 }
 
@@ -82,11 +71,7 @@ button {
 .header-title {
   font-family: var(--accent-text-family), fantasy, sans-serif; /*Press Start 2P;*/
 
-  /*font-size: 65px;
-  font-size: clamp(3.063rem,7vi,4.063rem);*/
   font-size: clamp(49px, 5vi, 65px);
-  /*line-height: 65px;
-  line-height: clamp(3.063rem,7vi,4.063rem);*/
   line-height: clamp(49px, 5vi, 65px);
 
   text-transform: uppercase;
@@ -130,14 +115,10 @@ img {
   block-size: 100%;
 
   object-fit: cover;
-  object-position: center;
+  object-position: center;  
+  
 }
-/*
-.heart {
-  inline-size: 30px;
-  block-size: 30px;
-}
-*/
+
 h2 p {
   inline-size: 100%;
   align-self: flex-start;
@@ -168,6 +149,7 @@ h2 p {
 
 .card__img-wrapper {
   position: relative;
+  border-block-end: 2px solid var(--accent-color);
 }
 
 .card__img-label {
@@ -282,13 +264,11 @@ button:focus {
   background-color: var(--background-color);
 
   inline-size: 357px;
-  block-size: 193px;
+  min-block-size: 193px;
   margin-inline: auto;
 }
 
 .button-dialog {
-  /*block-size: 38px;
-  inline-size: 92%;*/
   inline-size: 293px;
   block-size: 38px;
 
@@ -418,12 +398,6 @@ dialog::backdrop {
 
 .sparks {
   fill: rgba(255, 0, 0, 0);
-  transition: fill 1.3s linear;
-}
-
-.core:hover {
-  /*fill:var(--heart-color-visible);
-  fill: red;*/
 }
 
 .card__icon-button:hover .core {
@@ -499,6 +473,19 @@ dialog::backdrop {
   gap: 30px;
 }
 
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--main-text-family), Helvetica, sans-serif;
+    font-variation-settings: "wght" var(--main-text-paragraph-weight);
+    
+  }
+  .card__title {
+    font-family: var(--main-text-family), Helvetica, sans-serif;    
+    font-variation-settings: "wght" var(--main-text-title-weight);
+    
+  }
+}
+
 @media (width <= 375px) {
   .save-button {
     inline-size: 308px;
@@ -512,7 +499,7 @@ dialog::backdrop {
   }
   .dialog-insert-floppy {
     inline-size: 341px;
-    block-size: 195px;
+    min-block-size: 195px;
   }
 
   .button-dialog {

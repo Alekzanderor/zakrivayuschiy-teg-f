@@ -57,6 +57,9 @@
 
     --label-stroke-color:#ffffff;
 
+    --main-text-title-weight: 700;
+    --main-text-paragraph-weight: 400;
+
     --heart-color-contour:black;
     --heart-color:rgb(255,0,0,0);
 
