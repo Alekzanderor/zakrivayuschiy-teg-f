@@ -32,21 +32,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  
 }
 
 .header {
   inline-size: var(--inline-size);
   min-block-size: clamp(323px, 250px + 7.9vi, 364px);
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
   align-items: center;
   background-color: var(--background-color);
 
   margin: 102px 0;
   padding-block-start: clamp(120px, 100px + 2.5vi, 136px);
-  gap: 2.1dvb;
+  
   gap: 20px;
 }
 
@@ -130,6 +132,8 @@ h2 p {
   line-height: 21.78px;
 
   padding: 6px 0 0 8px;
+
+  padding-right: 5px;
 
   border-block-end: 2px solid var(--accent-color);
 }
@@ -258,19 +262,23 @@ button:focus {
 .save-button {
   inline-size: 337px;
   block-size: 53px;
+  margin-block-end: 105px;
 }
 
 .dialog-insert-floppy {
   background-color: var(--background-color);
 
   inline-size: 357px;
-  min-block-size: 193px;
+  /*min-block-size: 193px;*/
   margin-inline: auto;
+  padding-block-start: 30px;
+  padding-block-end: 30px;
 }
 
 .button-dialog {
   inline-size: 293px;
   block-size: 38px;
+  margin-block-end: 0;
 
   border: 2px solid var(--accent-color);
 }
@@ -491,6 +499,7 @@ dialog::backdrop {
     inline-size: 308px;
     block-size: 82px;
     flex-direction: column;
+    margin-block-end: 102px;
   }
 
   .save-button svg {
@@ -499,16 +508,21 @@ dialog::backdrop {
   }
   .dialog-insert-floppy {
     inline-size: 341px;
-    min-block-size: 195px;
   }
 
   .button-dialog {
     inline-size: 257px;
     block-size: 38px;
     margin-inline: 0;
+    margin-block-end: 0px;
   }
 
   .dialog-wrapper {
     justify-content: center;
+  }
+
+  .card__img-label {
+    inset-inline-end: 14px;
+    inset-block-start: 25px;
   }
 }
